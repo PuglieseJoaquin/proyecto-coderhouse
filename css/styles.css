@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*---Header---*/
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav {
+    width: 50%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+/*---Section---*/
+
+.section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/1077340.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_div {
+    color: white;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.582);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.section_div h1{
+    font-size: 3rem;
+}
+.section h3{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.section_bottom{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid gray;
+    
+}
+/**Productos**/
+
+.productos{
+    min-width: 350px;
+    height: 380px;
+
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productos_img{
+    width: 100%;
+}
+
+.productos_bottom{
+    background-color: rgb(129, 129, 129);
+    color: black;
+    padding: 12px 15px;
+    border-radius: 10px;
+}
+
+.productos_bottom:hover{
+    border: gray 2px solid;
+    background-color: white;
+    color: black;
+}
+/**Titlulo de productos**/
+section h2{
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+}
+/**Articulos**/
+.slider_productos{
+    display: flex;
+    overflow-x: auto;
+}
+
+
+/**---Servicios al Cliente--**/
+section h2{
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+}
+
+.nosotros{
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+
+}
+.nosotros_img{
+    width: 50%;
+    height: 50%;
+}
+.nosotros_contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/**Pie de pagina**/
+
+.pie_pagina{
+    width: 100%;
+    background-color: rgb(141, 101, 214);
+}
+
+.pie_pagina .grupo_1{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie_pagina .grupo_1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.form-register { 
+    width: 500px;
+    background-color: rgb(69, 82, 82);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    box-shadow: 7px 12px 40px #000;
+}
+.form-register h1 { 
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.controls {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.form-register p {
+height: 40px;
+text-align: center;
+font-size: 15px;
+}
+
+.form-register a:hover { 
+    color:black;
+    text-decoration: underline;
+}
+
+.form-register .bottom { 
+    width: 40%;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+}
+
+/********----Ultimos Modelos----********/
+
+
+.h1_modelos{
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    max-width: 1200px;
+
+
+}
+.card{
+    width: 100%;
+    height: 60%;
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: 20%;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgb(250, 248, 248);
+    box-shadow: 0px 1px 10px rgba;
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba;
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 110px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #383838;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+/********----Nosotros----********/
+.cultura_h1{
+    background-color: grey;
+    text-align: center;
+    padding: 15px;
+}
+.we{
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.we_iframe{
+    width: 100%;
+    height: 50%;
+}
+.we_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/********----Innovación----********/
+.innovacion{
+    width: 80%;
+    height: 80vh;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 45);
+    border-radius: 5px;
+}
+
+.innovacion_img{
+    width: 310px;
+    border-radius: 5px;
+    float: left;
+}
+
+/**---Contacto--**/
+
+.body_contacto {
+    background-image: url(../img/descarga.jpg);
+}
+.form-register { 
+    width: 500px;
+    background-color: rgb(69, 82, 82);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    box-shadow: 7px 12px 40px #000;
+}
+.form-register h1 { 
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.controls {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.form-register p {
+height: 40px;
+text-align: center;
+font-size: 15px;
+}
+
+.form-register a:hover { 
+    color:black;
+    text-decoration: underline;
+}
+
+.form-register .bottom { 
+    width: 40%;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+}
